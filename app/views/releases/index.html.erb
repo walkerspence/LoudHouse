@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Releases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artist</th>
+      <th>Title</th>
+      <th>Release</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @releases.each do |release| %>
+      <tr>
+        <td><%= release.artist %></td>
+        <td><%= release.title %></td>
+        <td><%= release.release %></td>
+        <td><%= release.description %></td>
+        <td><%= image_tag release.album_art.url(:thumb) %></td>
+        <td><%= link_to 'Show', release %></td>
+        <td><%= link_to 'Edit', edit_release_path(release) %></td>
+        <td><%= link_to 'Destroy', release, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Release', new_release_path %>

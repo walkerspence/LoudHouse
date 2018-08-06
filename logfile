@@ -1,0 +1,12 @@
+2018-08-01 20:27:47.760 PDT [843] LOG:  listening on IPv6 address "::1", port 5432
+2018-08-01 20:27:47.760 PDT [843] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2018-08-01 20:27:47.761 PDT [843] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2018-08-01 20:27:47.777 PDT [844] LOG:  database system was shut down at 2018-05-15 20:19:38 PDT
+2018-08-01 20:27:47.784 PDT [843] LOG:  database system is ready to accept connections
+2018-08-01 20:29:23.340 PDT [858] ERROR:  role "Walker" already exists
+2018-08-01 20:29:23.340 PDT [858] STATEMENT:  CREATE ROLE "Walker" SUPERUSER CREATEDB CREATEROLE INHERIT LOGIN;
+2018-08-01 20:30:11.955 PDT [843] LOG:  received fast shutdown request
+2018-08-01 20:30:11.955 PDT [843] LOG:  aborting any active transactions
+2018-08-01 20:30:11.956 PDT [843] LOG:  worker process: logical replication launcher (PID 850) exited with exit code 1
+2018-08-01 20:30:11.956 PDT [845] LOG:  shutting down
+2018-08-01 20:30:11.964 PDT [843] LOG:  database system is shut down

@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  headliner: MyString
+  supporting: MyString
+  price: 1.5
+  address: MyString
+  city: MyString
+  zip: MyString
+  state: MyString
+  date: 2018-08-02
+  time: 2018-08-02 18:44:42
+  description: MyText
+
+two:
+  headliner: MyString
+  supporting: MyString
+  price: 1.5
+  address: MyString
+  city: MyString
+  zip: MyString
+  state: MyString
+  date: 2018-08-02
+  time: 2018-08-02 18:44:42
+  description: MyText

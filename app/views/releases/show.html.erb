@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Artist:</strong>
+  <%= @release.artist %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @release.title %>
+</p>
+
+<p>
+  <strong>Release:</strong>
+  <%= @release.release %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @release.description %>
+</p>
+
+
+<p>
+  <strong>Album Art:</strong>
+  <%= image_tag @release.album_art.url(:medium) %>
+</p>
+
+<%= link_to 'Edit', edit_release_path(@release) %> |
+<%= link_to 'Back', releases_path %>
