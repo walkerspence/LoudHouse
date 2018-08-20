@@ -2,6 +2,84 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.center {
+.home {
+  background: url('home/home.png');
+  display: table-cell;
+  margin: auto;
+  height: 80vh;
+  width: 100vw;
   text-align: center;
+  vertical-align: middle;
+}
+
+.center-inner {
+  width: 33vw;
+  margin: auto;
+}
+
+.pages, .pages:visited {
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('home/blank.png');
+  display: table-cell;
+  font-family: Georgia, serif;
+  font-size: 16px;
+  margin: auto;
+  padding: 0;
+  width: inherit;
+  height: 64px;
+  vertical-align: middle;
+  color: white;
+}
+
+.pages:hover {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#about:hover {
+  background-image: url('home/music.png');
+}
+#events:hover {
+  background-image: url('home/events.png');
+}
+#artists:hover {
+  background-image: url('home/artists.png');
+}
+#releases:hover {
+  background-image: url('home/releases.png');
+}
+#studio:hover {
+  background-image: url('home/studio.png');
+}
+#contact:hover {
+  background-image: url('home/contact.png');
+}
+
+
+ul {
+  margin: 0 !important;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  width: 33vw;
+}
+
+li {
+  float: left;
+  width: 16.66%;
+  background-color: transparent;
+}
+
+#logo {
+  width: 33vw;
 }

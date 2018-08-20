@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <p>
   <strong>Headliner:</strong>
   <%= @event.headliner %>
@@ -55,5 +53,8 @@
   <%= image_tag @event.photo.url(:medium) %>
 </p>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
+<% if user_signed_in? %>
+  <%= link_to 'Edit', edit_event_path(@event) %>
+  <%= link_to 'Delete', @event, method: :delete, data: {confirm: 'Are you sure?'} %>
+<% end %>

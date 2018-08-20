@@ -22,8 +22,10 @@
         <td><%= release.description %></td>
         <td><%= image_tag release.album_art.url(:thumb) %></td>
         <td><%= link_to 'Show', release %></td>
-        <td><%= link_to 'Edit', edit_release_path(release) %></td>
-        <td><%= link_to 'Destroy', release, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if user_signed_in? %>
+          <td><%= link_to 'Edit', edit_release_path(release) %></td>
+          <td><%= link_to 'Delete', release, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
       </tr>
     <% end %>
   </tbody>
@@ -31,4 +33,6 @@
 
 <br>
 
-<%= link_to 'New Release', new_release_path %>
+<% if user_signed_in? %>
+  <%= link_to 'New Release', new_release_path %>
+<% end %>
