@@ -1,0 +1,13 @@
+<div class="card featured-card">
+  <div class="card-body featured-card-body" id="artist">
+    <div class="row">
+      <div class="col-md-7">
+        <h5><a class="card-title" id="artist" href="/artist/<%= artist.id %>"><%= artist.name %></a></h5>
+        <p class="card-text" id="artist"><%= artist.description %></p>
+      </div>
+      <div class="col-md-5">
+        <%= image_tag artist.photo.url, class: "featured-card-image" %>
+      </div>
+    </div>
+  </div>
+</div>

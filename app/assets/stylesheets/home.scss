@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/*** HOMEPAGE ***/
+
 .home {
   background: url('home/home.png');
   display: table-cell;
@@ -17,69 +19,294 @@
   margin: auto;
 }
 
-.pages, .pages:visited {
-  -moz-transition: all .2s ease-in;
-  -o-transition: all .2s ease-in;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+#logo {
+  width: 33vw;
+  min-width: 400px;
+}
+
+/** page bar backgrounds/styling **/
+
+ul {
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  width: 33vw;
+}
+
+#page-bar {
+  padding: 0;
+  margin: 0;
+}
+
+.pages {
+  -webkit-transition: background 1s ease-in-out;
+  -moz-transition: background 1s ease-in-out;
+  -o-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
   background-image: url('home/blank.png');
-  display: table-cell;
-  font-family: Georgia, serif;
-  font-size: 16px;
+  line-height: 64px;
+  min-width: 64px;
   margin: auto;
-  padding: 0;
-  width: inherit;
-  height: 64px;
-  vertical-align: middle;
-  color: white;
 }
 
 .pages:hover {
-  -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -moz-transition: background .1s ease-in;
+  -o-transition: background .1s ease-in;
+  -webkit-transition: background .1s ease-in;
+  transition: background .1s ease-in;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#about:hover {
+.pages#about:hover {
   background-image: url('home/music.png');
 }
-#events:hover {
+.pages#events:hover {
   background-image: url('home/events.png');
 }
-#artists:hover {
+.pages#artists:hover {
   background-image: url('home/artists.png');
 }
-#releases:hover {
+.pages#releases:hover {
   background-image: url('home/releases.png');
 }
-#studio:hover {
+.pages#studio:hover {
   background-image: url('home/studio.png');
 }
-#contact:hover {
+.pages#contact:hover {
   background-image: url('home/contact.png');
 }
 
+/** page bar links **/
 
-ul {
-  margin: 0 !important;
+.section-link, .section-link:visited {
+  background-color: transparent;
+  border-color: transparent;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  width: inherit;
+  color: white;
   padding: 0;
-  overflow: hidden;
-  text-align: center;
-  width: 33vw;
+  vertical-align: middle;
+
+  margin:0 auto;
+  display: block;
 }
 
-li {
-  float: left;
-  width: 16.66%;
+.section-link:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/*** FEATURES ***/
+
+.featured {
+  border-width: 18px 1px 0 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+.featured-header {
+  text-align: center;
+  height: 57px;
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+
+.featured-card {
+  margin-bottom: 18px;
+  border: none !important;
+}
+
+.featured-card-image {
+  width: inherit;
+  border: 1px solid;
+}
+
+.header-link, .header-link:visited {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  text-align: center;
+  min-width: 273px;
+}
+
+.header-link:hover {
   background-color: transparent;
 }
 
-#logo {
-  width: 33vw;
+.card-title, .card-title:visited {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+.card-title:hover {
+  background: transparent;
+  font-weight: 400;
+}
+
+.card-subtitle {
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px !important;
+}
+
+
+.card-text {
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  margin-bottom: 6px;
+  padding: 0;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+}
+
+.row#featured-content {
+  padding: 0;
+  margin: 0;
+}
+
+/** featured events **/
+
+.featured#events {
+  background-color: #669acc;
+}
+
+.header-link#events {
+  color: #C4DDF4;
+}
+
+.featured-card-body#event {
+  background-color: #29649D;
+  color: #C4DDF4;
+}
+
+.card-title#event {
+  color: #C4DDF4;
+}
+
+.card-title#event:hover {
+  color: #91BAE2;
+}
+
+.card-subtitle#event {
+  color: #91BAE2;
+}
+
+.card-text#address_header {
+  padding-left: 15px;
+  padding-right: 0;
+}
+
+.card-text#address_body {
+  padding-left: 5px;
+}
+
+/** featured artists **/
+
+.featured#artists {
+  background-color: #cca566;
+}
+
+.header-link#artists {
+  color: #FFECCC;
+}
+
+.featured-card-body#artist {
+  background-color: #7C5517;
+  color: #FFECCC;
+}
+
+.card-title#artist {
+  color: #FFECCC;
+}
+
+.card-title#artist:hover {
+  color: #F4D4A0;
+}
+
+/** featured releases **/
+
+.featured#releases {
+  background-color: #cc7266;
+}
+
+.header-link#releases {
+  color: #ffedeb;
+}
+
+.featured-card-body#release {
+  background-color: #cc7266;
+  color: #ffedeb;
+  padding: 0;
+}
+
+.featured-card-image#album_art {
+  max-width: 250px;
+  max-height: 250px;
+  margin: 0 auto 12px auto;
+  display: block;
+}
+
+.card-title#release {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  //color: white;
+  color: #ffedeb;
+}
+
+.card-title#release:hover {
+  color: #F4AAA0;
+}
+
+.card-subtitle#release {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  font-weight: 400;
+  //color: white;
+  color: #ffedeb;
+}
+
+@media (max-width: 1295px) {
+  .center-inner {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+  }
+  #page-bar {
+    width: 66vw;
+    margin: auto;
+  }
+  .header-link#releases {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 991px) {
+  #page-bar {
+    width: 100vw;
+  }
+  .pages {
+    min-width: 150px;
+  }
+  .header-link#releases {
+    font-size: 48px
+  }
+}
+
+@media (max-width: 1679px) and (min-width: 1296px) {
+  .header-link#releases {
+    font-size: 36px;
+  }
 }

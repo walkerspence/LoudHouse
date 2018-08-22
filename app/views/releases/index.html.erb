@@ -16,7 +16,7 @@
   <tbody>
     <% @releases.each do |release| %>
       <tr>
-        <td><%= release.artist %></td>
+        <td><%= release.artist.name %></td>
         <td><%= release.title %></td>
         <td><%= release.release %></td>
         <td><%= release.description %></td>

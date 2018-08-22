@@ -5,7 +5,7 @@ class ReleasesController < ApplicationController
   # GET /releases
   # GET /releases.json
   def index
-    @releases = Release.all
+    @releases = Release.all.sort_by(&:release).reverse
   end
 
   # GET /releases/1
@@ -16,10 +16,12 @@ class ReleasesController < ApplicationController
   # GET /releases/new
   def new
     @release = Release.new
+    @artists = Artist.all
   end
 
   # GET /releases/1/edit
   def edit
+    @artists = Artist.all
   end
 
   # POST /releases
@@ -63,13 +65,12 @@ class ReleasesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_release
-      @release = Release.find(params[:id])
-    end
+  def set_release
+    @release = Release.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def release_params
-      params.require(:release).permit(:artist, :title, :release, :description, :album_art)
-    end
+  def release_params
+    params[:release][:artist] = Artist.find(params[:release][:artist_id])
+    params.require(:release).permit(:artist_id, :title, :release, :description, :album_art, artist_attributes: [:name, :description, :photo, :featured])
+  end
 end

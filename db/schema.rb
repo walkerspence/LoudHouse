@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_06_205959) do
+ActiveRecord::Schema.define(version: 2018_08_21_050506) do
 
   create_table "artists", force: :cascade do |t|
     t.text "description"
@@ -21,12 +21,13 @@ ActiveRecord::Schema.define(version: 2018_08_06_205959) do
     t.bigint "photo_file_size"
     t.datetime "photo_updated_at"
     t.string "name"
+    t.boolean "featured", default: false
   end
 
   create_table "events", force: :cascade do |t|
     t.string "headliner"
     t.string "supporting"
-    t.float "price"
+    t.string "price"
     t.string "address"
     t.string "city"
     t.string "zip"
@@ -38,8 +39,9 @@ ActiveRecord::Schema.define(version: 2018_08_06_205959) do
     t.datetime "updated_at", null: false
     t.string "photo_file_name"
     t.string "photo_content_type"
-    t.bigint "photo_file_size"
+    t.integer "photo_file_size"
     t.datetime "photo_updated_at"
+    t.time "show"
   end
 
   create_table "releases", force: :cascade do |t|
@@ -53,6 +55,7 @@ ActiveRecord::Schema.define(version: 2018_08_06_205959) do
     t.string "album_art_content_type"
     t.integer "album_art_file_size"
     t.datetime "album_art_updated_at"
+    t.string "artist_id"
   end
 
   create_table "users", force: :cascade do |t|

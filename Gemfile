@@ -61,7 +61,15 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+gem 'sinatra', '~> 2.0.2'
 
-gem 'sinatra', '= 2.0'
+gem 'devise'
+
+gem 'seed_dump'
 
 gem 'paperclip', '~> 6.1'
+
+gem 'bootstrap'
+
+gem 'jquery-rails' 
+

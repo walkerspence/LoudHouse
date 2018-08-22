@@ -1,17 +1,36 @@
 <div class="home">
   <div class="center">
+    <%= image_tag('logo.png', id: 'logo') %>
     <div class="center-inner">
-      <%= image_tag('logo.png', id: 'logo') %><br>
-      <ul>
-        <li><a class="pages" id="about" href="/about">About</a></li>
-        <li><a class="pages" id="events" href="/events">Events</a></li>
-        <li><a class="pages" id="artists" href="/artists">Artists</a></li>
-        <li><a class="pages" id="releases" href="/releases">Releases</a></li>
-        <li><a class="pages" id="studio" href="/studio">Studio</a></li>
-        <li><a class="pages" id="contact" href="/contact">Contact</a></li>
+      <ul class="row" id="page-bar">
+        <li class="col-xs pages" id="about"><a class="section-link" href="/about">About</a></li>
+        <li class="col-xs pages" id="events"><a class="section-link" href="/events">Events</a></li>
+        <li class="col-xs pages" id="artists"><a class="section-link" href="/artists">Artists</a></li>
+        <li class="col-xs pages" id="releases"><a class="section-link" href="/releases">Releases</a></li>
+        <li class="col-xs pages" id="studio"><a class="section-link" href="/studio">Studio</a></li>
+        <li class="col-xs pages" id="contact"><a class="section-link" href="/contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </div>
 
-some placeholder text for the homepage
+<div class="row" id="featured-content">
+  <div class="featured col-lg-5" id="events">
+    <h1 class="featured-header"><a class="header-link" id="events" href="/events">EVENTS</a></h1>
+    <% @featured_events.each do |event| %>
+      <%= render partial: "event", locals: {event: event} %>
+    <% end %>
+  </div>
+  <div class="featured col-lg-5" id="artists">
+    <h1 class="featured-header"><a class="header-link" id="artists" href="/artists">ARTISTS</a></h1>
+    <% @featured_artists.each do |artist| %>
+      <%= render partial: "artist", locals: {artist: artist} %>
+    <% end %>
+  </div>
+  <div class="featured col-lg-2" id="releases">
+    <h1 class="featured-header" id="releases"><a class="header-link" id="releases" href="/releases">RELEASES</a></h1>
+    <% @featured_releases.each do |release| %>
+      <%= render partial: "release", locals: {release: release} %>
+    <% end %>
+  </div>
+</div>

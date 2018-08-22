@@ -12,8 +12,8 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :artist %>
-    <%= form.text_field :artist %>
+    <%= form.label :artist_id, "Artist" %>
+    <%= form.collection_select :artist_id, @artists, :id, :name %>
   </div>
 
   <div class="field">

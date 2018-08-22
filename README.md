@@ -2,8 +2,14 @@
 
 Website for Loud House Publishing. 
 
-Things you may want to cover:
+To run:
 
-Ruby version: 2.5.0
+Make sure you have ruby v 2.5.0
 
+Download/pull from the github repo
 
+run ```bundle install```
+
+run ```rails s```
+
+visit localhost:3000 in your browser. 
