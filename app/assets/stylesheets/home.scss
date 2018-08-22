@@ -124,8 +124,11 @@ ul {
 }
 
 .featured-card-image {
+  max-width: 250px;
   width: inherit;
-  border: 1px solid;
+  margin: auto;
+  display: block;
+  border: 2px solid;
 }
 
 .header-link, .header-link:visited {
@@ -251,10 +254,7 @@ ul {
 }
 
 .featured-card-image#album_art {
-  max-width: 250px;
-  max-height: 250px;
   margin: 0 auto 12px auto;
-  display: block;
 }
 
 .card-title#release {
@@ -308,5 +308,11 @@ ul {
 @media (max-width: 1679px) and (min-width: 1296px) {
   .header-link#releases {
     font-size: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .featured-card-image {
+    margin-top: 10px;
   }
 }
