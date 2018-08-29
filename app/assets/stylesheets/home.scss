@@ -8,7 +8,7 @@
   background: url('home/home.png');
   display: table-cell;
   margin: auto;
-  height: 80vh;
+  height: 90vh;
   width: 100vw;
   text-align: center;
   vertical-align: middle;
@@ -120,7 +120,10 @@ ul {
 
 .featured-card {
   margin-bottom: 18px;
-  border: none !important;
+  border-radius: 15px;
+}
+
+.featured-card-body {
 }
 
 .featured-card-image {
@@ -188,6 +191,10 @@ ul {
   color: #C4DDF4;
 }
 
+.featured-card#event {
+  background-color: #29649D;
+}
+
 .featured-card-body#event {
   background-color: #29649D;
   color: #C4DDF4;
@@ -224,6 +231,10 @@ ul {
   color: #FFECCC;
 }
 
+.featured-card#artist {
+  background-color: #7C5517;
+}
+
 .featured-card-body#artist {
   background-color: #7C5517;
   color: #FFECCC;
@@ -247,6 +258,11 @@ ul {
   color: #ffedeb;
 }
 
+.featured-card#release {
+  background-color: #cc7266;
+  border-color: transparent;
+}
+
 .featured-card-body#release {
   background-color: #cc7266;
   color: #ffedeb;
@@ -258,10 +274,6 @@ ul {
 }
 
 .card-title#release {
-  font-size: 26px;
-  font-weight: 600;
-  text-align: center;
-  //color: white;
   color: #ffedeb;
 }
 
@@ -269,13 +281,18 @@ ul {
   color: #F4AAA0;
 }
 
-.card-subtitle#release {
+.artist-name#release {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.album-name#release {
   text-align: center;
   font-family: Georgia, serif;
   font-size: 14px;
   font-weight: 400;
-  //color: white;
-  color: #ffedeb;
 }
 
 @media (max-width: 1295px) {
