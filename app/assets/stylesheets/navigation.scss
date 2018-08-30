@@ -18,3 +18,12 @@ ul > li {
 .navbar-brand {
   positon: fixed;
 }
+
+.navbar-brand:hover {
+  background-color: transparent;
+}
+
+.small-home:hover {
+  filter: opacity(.5);
+}
+

@@ -9,9 +9,13 @@
         <li class="col-xs pages" id="releases"><a class="section-link" href="/releases">Releases</a></li>
         <li class="col-xs pages" id="studio"><a class="section-link" href="/studio">Studio</a></li>
         <li class="col-xs pages" id="contact"><a class="section-link" href="/contact">Contact</a></li>
+        <% if user_signed_in? %>
+          <li class="col-xs pages" id="logout"><%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'section-link' %></li>
+        <% end %>
       </ul>
     </div>
   </div>
+  <a href="#featured-content"><%= image_tag('down-arrow.png', id: 'down-arrow', size: '125x50') %></a>
 </div>
 
 <div class="row" id="featured-content">

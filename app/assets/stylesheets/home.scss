@@ -5,102 +5,34 @@
 /*** HOMEPAGE ***/
 
 .home {
-  background: url('home/home.png');
+  background: url('home.png');
   display: table-cell;
   margin: auto;
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
   text-align: center;
   vertical-align: middle;
 }
 
-.center-inner {
-  width: 33vw;
-  margin: auto;
-}
-
 #logo {
-  width: 33vw;
-  min-width: 400px;
+  width: 25vw;
+  min-width: 350px;
 }
 
-/** page bar backgrounds/styling **/
-
-ul {
-  padding: 0;
-  overflow: hidden;
-  list-style-type: none;
-  width: 33vw;
+#down-arrow {
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  filter: opacity(.5);
 }
 
-#page-bar {
-  padding: 0;
-  margin: 0;
-}
-
-.pages {
-  -webkit-transition: background 1s ease-in-out;
-  -moz-transition: background 1s ease-in-out;
-  -o-transition: background 1s ease-in-out;
-  transition: background 1s ease-in-out;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: transparent;
-  background-image: url('home/blank.png');
-  line-height: 64px;
-  min-width: 64px;
-  margin: auto;
-}
-
-.pages:hover {
-  -moz-transition: background .1s ease-in;
-  -o-transition: background .1s ease-in;
-  -webkit-transition: background .1s ease-in;
-  transition: background .1s ease-in;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.pages#about:hover {
-  background-image: url('home/music.png');
-}
-.pages#events:hover {
-  background-image: url('home/events.png');
-}
-.pages#artists:hover {
-  background-image: url('home/artists.png');
-}
-.pages#releases:hover {
-  background-image: url('home/releases.png');
-}
-.pages#studio:hover {
-  background-image: url('home/studio.png');
-}
-.pages#contact:hover {
-  background-image: url('home/contact.png');
-}
-
-/** page bar links **/
-
-.section-link, .section-link:visited {
-  background-color: transparent;
-  border-color: transparent;
-  font-family: Georgia, serif;
-  font-size: 18px;
-  width: inherit;
-  color: white;
-  padding: 0;
-  vertical-align: middle;
-
-  margin:0 auto;
-  display: block;
-}
-
-.section-link:hover {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
+#down-arrow:hover {
+  -webkit-filter: opacity(.1);
+  filter: opacity(1);
 }
 
 /*** FEATURES ***/
@@ -123,26 +55,12 @@ ul {
   border-radius: 15px;
 }
 
-.featured-card-body {
-}
-
 .featured-card-image {
   max-width: 250px;
   width: inherit;
   margin: auto;
   display: block;
   border: 2px solid;
-}
-
-.header-link, .header-link:visited {
-  font-family: Georgia, serif;
-  font-size: 48px;
-  text-align: center;
-  min-width: 273px;
-}
-
-.header-link:hover {
-  background-color: transparent;
 }
 
 .card-title, .card-title:visited {
@@ -162,7 +80,6 @@ ul {
   font-weight: 600;
   margin-bottom: 8px !important;
 }
-
 
 .card-text {
   font-family: Verdana, sans-serif;
@@ -188,28 +105,28 @@ ul {
 }
 
 .header-link#events {
-  color: #C4DDF4;
+  color: #e5f0fa;
 }
 
 .featured-card#event {
   background-color: #29649D;
 }
 
-.featured-card-body#event {
+.card-body#event {
   background-color: #29649D;
-  color: #C4DDF4;
+  color: #e5f0fa;
 }
 
 .card-title#event {
-  color: #C4DDF4;
+  color: #e5f0fa;
 }
 
 .card-title#event:hover {
-  color: #91BAE2;
+  color: #add0f0;
 }
 
 .card-subtitle#event {
-  color: #91BAE2;
+  color: #add0f0;
 }
 
 .card-text#address_header {
@@ -228,24 +145,24 @@ ul {
 }
 
 .header-link#artists {
-  color: #FFECCC;
+  color: #fff9f0;
 }
 
 .featured-card#artist {
   background-color: #7C5517;
 }
 
-.featured-card-body#artist {
+.card-body#artist {
   background-color: #7C5517;
-  color: #FFECCC;
+  color: #fff9f0;
 }
 
 .card-title#artist {
-  color: #FFECCC;
+  color: #fff9f0;
 }
 
 .card-title#artist:hover {
-  color: #F4D4A0;
+  color: #FFECCC;
 }
 
 /** featured releases **/
@@ -263,7 +180,7 @@ ul {
   border-color: transparent;
 }
 
-.featured-card-body#release {
+.card-body#release {
   background-color: #cc7266;
   color: #ffedeb;
   padding: 0;
@@ -296,27 +213,12 @@ ul {
 }
 
 @media (max-width: 1295px) {
-  .center-inner {
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-  }
-  #page-bar {
-    width: 66vw;
-    margin: auto;
-  }
   .header-link#releases {
     font-size: 24px;
   }
 }
 
 @media (max-width: 991px) {
-  #page-bar {
-    width: 100vw;
-  }
-  .pages {
-    min-width: 150px;
-  }
   .header-link#releases {
     font-size: 48px
   }

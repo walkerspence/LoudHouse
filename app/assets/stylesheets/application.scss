@@ -12,10 +12,188 @@
  *
  */
 
+@import 'about';
 @import 'artists';
+@import 'contact';
 @import 'events';
 @import 'home';
 @import 'navigation';
 @import 'releases';
 @import 'scaffolds';
+@import 'studio';
 @import 'bootstrap';
+
+/** nav bar backgrounds/styling **/
+
+ul {
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  width: 33vw;
+}
+
+#page-bar {
+  padding: 0;
+  margin: 0;
+}
+
+.pages {
+  line-height: 64px;
+  min-width: 64px;
+  margin: auto;
+  -webkit-transition: background 1s ease-in-out;
+  -moz-transition: background 1s ease-in-out;
+  -o-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  background-image: url('navbar/blank.png');
+}
+
+.pages:hover {
+  -moz-transition: background .1s ease-in;
+  -o-transition: background .1s ease-in;
+  -webkit-transition: background .1s ease-in;
+  transition: background .1s ease-in;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pages#about:hover {
+  background-image: url('navbar/music.png');
+}
+.pages#events:hover {
+  background-image: url('navbar/events.png');
+}
+.pages#artists:hover {
+  background-image: url('navbar/artists.png');
+}
+.pages#releases:hover {
+  background-image: url('navbar/releases.png');
+}
+.pages#studio:hover {
+  background-image: url('navbar/studio.png');
+}
+.pages#contact:hover {
+  background-image: url('navbar/contact.png');
+}
+.pages#logout:hover {
+  background-image: url('navbar/logout.png');
+}
+
+
+.section-link, .section-link:visited {
+  background-color: transparent;
+  border-color: transparent;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  width: inherit;
+  color: white;
+  padding: 0;
+  vertical-align: middle;
+
+  margin:0 auto;
+  display: block;
+}
+
+.section-link:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/** headers **/
+
+.header-link, .header-link:visited {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  margin: 0;
+  text-align: center;
+  min-width: 273px;
+}
+
+
+.header-link:hover {
+  background-color: transparent;
+}
+
+.header {
+  font-family: Georgia, serif;
+  font-size: 80px;
+  margin: 0;
+  text-align: center;
+  min-width: 273px;
+}
+
+.center-inner {
+  width: 33vw;
+  margin: auto;
+}
+
+/** static pages **/
+
+.static-page {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 85px;
+  text-align: center;
+}
+
+.static-page-body {
+  display: inline-block;
+  width: 66%;
+  height: 100%;
+  overflow: auto;
+  max-width: 600px;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.static-page-text {
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  margin: 0 14px 14px 14px;
+  padding: 0;
+  text-align: left;
+}
+
+hr {
+  width: 66vw;
+  max-width: 600px;
+  margin: 0 auto 16px auto;
+}
+
+/** forms **/
+
+.form {
+  padding-top: 85px;
+}
+
+/** mobile **/
+
+@media (max-width: 1295px) {
+  .static-page-body {
+    width: 100%;
+  }
+  .center-inner {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+  }
+  #page-bar {
+    width: 66vw;
+    margin: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  #page-bar {
+    width: 100vw;
+  }
+  .pages {
+    min-width: 150px;
+  }
+}
