@@ -18,7 +18,9 @@
     <% if alert %>
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
-    <% unless controller_name == "home" || ((controller_name == "artists" || controller_name == "events" || controller_name == "releases") && action_name == "new") %>
+    <% unless controller_name == "home" ||
+        ((controller_name == "artists" || controller_name == "events" || controller_name == "releases") &&
+            action_name == "new" || action_name == "edit") %>
       <%= render 'layouts/navigation' %>
     <% end %>
     <%= yield %>

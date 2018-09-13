@@ -5,7 +5,9 @@
     </div>
     <div class="col-md">
       <a class="card-title" id="release" href="/releases/<%= release.id %>">
-        <h5 class="artist-name" id="release"><%= release.artist.name %></h5>
+        <% if release.artist %>
+          <h5 class="artist-name" id="release"><%= release.artist.name %></h5>
+        <% end %>
         <h6 class="album-name" id="release"><%= release.title %></h6>
       </a>
     </div>

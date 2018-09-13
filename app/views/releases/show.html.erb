@@ -1,7 +1,9 @@
 <% @title = @release.title + " | Loud House Publishing" %>
 <p>
   <strong>Artist:</strong>
-  <%= @release.artist %>
+  <% if @release.artist %>
+    <%= @release.artist.name %>
+  <% end %>
 </p>
 
 <p>
@@ -18,7 +20,6 @@
   <strong>Description:</strong>
   <%= @release.description %>
 </p>
-
 
 <p>
   <strong>Album Art:</strong>
