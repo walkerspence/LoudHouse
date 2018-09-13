@@ -1,5 +1,5 @@
 User.create!([
-  {email: "loudhousepublishing@gmail.com", password: "password", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 17, current_sign_in_at: "2018-09-13 01:03:16", last_sign_in_at: "2018-09-11 22:15:55", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1"}
+  #{email: "loudhousepublishing@gmail.com", password: "password", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 17, current_sign_in_at: "2018-09-13 01:03:16", last_sign_in_at: "2018-09-11 22:15:55", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1"}
 ])
 Artist.create!([
   {description: "Suspendisse vel felis nibh. Cras congue posuere convallis. Fusce gravida aliquet urna, in pretium ante pellentesque nec. Fusce risus erat, condimentum egestas mollis eget, ornare id mi.", photo_file_name: "LOGO.JPG", photo_content_type: "image/jpeg", photo_file_size: 708619, photo_updated_at: "2018-08-06 22:05:35", name: "False Kermit", featured: true},
