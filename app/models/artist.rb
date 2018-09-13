@@ -5,7 +5,7 @@ class Artist < ApplicationRecord
                     :styles => { :home => "500x500", :medium => "250x250", :thumb => "100x100>" }
   #TODO set default "missing" image to loudhouse logo
 
-  has_many :releases, dependent: :destroy
+  has_many :releases, dependent: :destroy, optional: true
 
   validates_attachment :photo, content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] }
 end
