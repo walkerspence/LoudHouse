@@ -6,6 +6,9 @@
 
 .home {
   background: url('home.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
   display: table-cell;
   margin: auto;
   height: 100vh;
@@ -52,7 +55,6 @@
 
 .featured-card {
   margin-bottom: 18px;
-  border-radius: 15px;
 }
 
 .featured-card-image {
@@ -101,19 +103,35 @@
 /** featured events **/
 
 .featured#events {
-  background-color: #669acc;
+  //background-color: #669acc;
+  background-color: #005C7B;
 }
 
 .header-link#events {
   color: #e5f0fa;
 }
 
+.header-link#events:hover {
+  color: #a9cdef;
+}
+
 .featured-card#event {
-  background-color: #29649D;
+  background-color: #005C7B;
+  margin-bottom: 0;
+}
+
+.card#event {
+  border-radius: 0;
+  border-top-width: 2px;
+  border-top-color: #e5f0fa;
+  border-bottom-width: 0px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
 }
 
 .card-body#event {
-  background-color: #29649D;
+  background-color: #005C7B;
   color: #e5f0fa;
 }
 
@@ -122,11 +140,11 @@
 }
 
 .card-title#event:hover {
-  color: #add0f0;
+  color: #a9cdef;
 }
 
 .card-subtitle#event {
-  color: #add0f0;
+  color: #a9cdef;
 }
 
 .card-text#address_header {
@@ -141,19 +159,38 @@
 /** featured artists **/
 
 .featured#artists {
-  background-color: #cca566;
+  //background-color: #cca566;
+  background-color: #C58B00;
+  //background-color: #7C5517;
 }
 
 .header-link#artists {
   color: #fff9f0;
 }
 
+.header-link#artists:hover {
+  color: #ffda99;
+}
+
 .featured-card#artist {
-  background-color: #7C5517;
+  //background-color: #7C5517;
+  background-color: #C58B00;
+  margin-bottom: 0px;
+}
+
+.card#artist {
+  border-radius: 0;
+  border-top-width: 2px;
+  border-top-color: #fff9f0;
+  border-bottom-width: 0px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
 }
 
 .card-body#artist {
-  background-color: #7C5517;
+  //background-color: #7C5517;
+  background-color: #C58B00;
   color: #fff9f0;
 }
 
@@ -162,26 +199,33 @@
 }
 
 .card-title#artist:hover {
-  color: #FFECCC;
+  color: #ffda99;
 }
 
 /** featured releases **/
 
 .featured#releases {
-  background-color: #cc7266;
+  background-color: #B00035;
+  //background-color: #cc7266;
 }
 
 .header-link#releases {
   color: #ffedeb;
 }
 
+.header-link#releases:hover {
+  color: #ff9f94;
+}
+
 .featured-card#release {
-  background-color: #cc7266;
+  //background-color: #cc7266;
+  background-color: #B00035;
   border-color: transparent;
 }
 
 .card-body#release {
-  background-color: #cc7266;
+  //background-color: #cc7266;
+  background-color: #B00035;
   color: #ffedeb;
   padding: 0;
 }
@@ -195,7 +239,8 @@
 }
 
 .card-title#release:hover {
-  color: #F4AAA0;
+  color: #ff9f94;
+  text-decoration: none;
 }
 
 .artist-name#release {

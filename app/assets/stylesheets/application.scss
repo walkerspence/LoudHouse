@@ -41,10 +41,6 @@ ul {
   line-height: 64px;
   min-width: 64px;
   margin: auto;
-  -webkit-transition: background 1s ease-in-out;
-  -moz-transition: background 1s ease-in-out;
-  -o-transition: background 1s ease-in-out;
-  transition: background 1s ease-in-out;
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
@@ -52,10 +48,6 @@ ul {
 }
 
 .pages:hover {
-  -moz-transition: background .1s ease-in;
-  -o-transition: background .1s ease-in;
-  -webkit-transition: background .1s ease-in;
-  transition: background .1s ease-in;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
@@ -67,6 +59,15 @@ ul {
 .pages#events:hover {
   background-image: url('navbar/events.png');
 }
+
+.pages:hover .section-link {
+  text-shadow:
+          -1px -1px 0 #000,
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+          1px 1px 0 #000;
+}
+
 .pages#artists:hover {
   background-image: url('navbar/artists.png');
 }
@@ -102,6 +103,14 @@ ul {
   color: white;
   background-color: transparent;
   text-decoration: none;
+}
+
+col-xs-pages#events:hover .section-link{
+  text-shadow:
+          -1px -1px 0 #000,
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+          1px 1px 0 #000;
 }
 
 /** headers **/
