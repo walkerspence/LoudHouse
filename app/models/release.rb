@@ -1,8 +1,12 @@
 class Release < ApplicationRecord
   has_attached_file :album_art,
-                    :path => ":rails_root/public/system/:attachment/:id/:style/:filename",
-                    :url => "/system/:attachment/:id/:style/:filename",
-                    :styles => { :home => "500x500", :medium => "250x250", :thumb => "100x100>" }
+                    :styles => { :home => "500x500" },
+                    :s3_protocol => 'https',
+                    :s3_host_name => ENV['S3_HOST_NAME'],
+                    :path => ENV['S3_PATH_RELEASES'],
+                    :storage => 's3',
+                    :s3_region => ENV['AWS_REGION'],
+                    :bucket => ENV['S3_BUCKET_NAME']
   #TODO set default "missing" image to loudhouse logo
 
   belongs_to :artist, optional: true

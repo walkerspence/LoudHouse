@@ -78,3 +78,7 @@ gem 'paperclip', '~> 6.1'
 gem 'bootstrap'
 
 gem 'jquery-rails'
+
+gem 'figaro'
+
+gem 'aws-sdk-s3'
