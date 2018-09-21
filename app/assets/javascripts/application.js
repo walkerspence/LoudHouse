@@ -18,9 +18,3 @@
 //= require home
 //= require application
 //= require_tree .
-
-var images = ['navbar/music.png', 'navbar/events.png', 'navbar/artists.png', 'navbar/releases.png', 'navbar/studio.png', 'navbar/contact.png'];
-
-$(window).load(function(){
-  $(".pages #about").mouseover();
-});
