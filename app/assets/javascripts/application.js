@@ -18,3 +18,9 @@
 //= require home
 //= require application
 //= require_tree .
+
+var images = ['navbar/music.png', 'navbar/events.png', 'navbar/artists.png', 'navbar/releases.png', 'navbar/studio.png', 'navbar/contact.png'];
+
+for(var i = 0, len = images.length; i < len; i++) {
+  new Image().src = images[i];
+}
