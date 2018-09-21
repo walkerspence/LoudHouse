@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: right;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   display: table-cell;
   margin: auto;
   height: 100vh;
