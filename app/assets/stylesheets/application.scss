@@ -59,15 +59,6 @@ ul {
 .pages#events:hover {
   background-image: url('navbar/events.png');
 }
-
-.pages:hover .section-link {
-  text-shadow:
-          -1px -1px 0 #000,
-          1px -1px 0 #000,
-          -1px 1px 0 #000,
-          1px 1px 0 #000;
-}
-
 .pages#artists:hover {
   background-image: url('navbar/artists.png');
 }
@@ -80,10 +71,14 @@ ul {
 .pages#contact:hover {
   background-image: url('navbar/contact.png');
 }
-.pages#logout:hover {
-  background-image: url('navbar/logout.png');
-}
 
+.pages:hover .section-link {
+  text-shadow:
+          -1px -1px 0 #000,
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+          1px 1px 0 #000;
+}
 
 .section-link, .section-link:visited {
   background-color: transparent;
@@ -184,6 +179,12 @@ hr {
 .description {
   height: 250px;
   width: 500px;
+}
+
+/** pre-load images **/
+.hidden-images {
+  position:absolute;
+  left:-9999px;
 }
 
 /** mobile **/
