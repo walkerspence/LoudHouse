@@ -39,7 +39,7 @@ ul {
 
 .pages {
   line-height: 64px;
-  min-width: 64px;
+  width: 64px;
   margin: auto;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -206,7 +206,15 @@ hr {
   #page-bar {
     width: 100vw;
   }
+}
+
+@media (max-width: 500px) {
   .pages {
     min-width: 150px;
+    background-image: url('navbar/blank.png');
+  }
+
+  .pages#about, .pages#events, .pages#artists, .pages#releases, .pages#studio, .pages#contact {
+    background-image: url('navbar/blank.png');
   }
 }
