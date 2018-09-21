@@ -1,16 +1,22 @@
 <nav class="<%= current_page?(root_path) ? 'navbar transparent' : 'navbar' %> navbar-expand-lg navbar-light fixed-top" id=<%=controller_name%>>
   <div class="container-fluid">
-    <a class="navbar-brand js-scroll-trigger" href="<%= root_path %>"><%= image_tag('logo-small.png', class: 'small-home', size: '82x59') %></a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="col-xs pages" id="about"><a class="section-link" href="/about">About</a></li>
-        <li class="col-xs pages" id="events"><a class="section-link" href="/events">Events</a></li>
-        <li class="col-xs pages" id="artists"><a class="section-link" href="/artists">Artists</a></li>
-        <li class="col-xs pages" id="releases"><a class="section-link" href="/releases">Releases</a></li>
-        <li class="col-xs pages" id="studio"><a class="section-link" href="/studio">Studio</a></li>
-        <li class="col-xs pages" id="contact"><a class="section-link" href="/contact">Contact</a></li>
+    <div class="col-md-5">
+      <ul class="row" id="navbar-row">
+        <li class="col-xs pages-navbar" id="about"><a class="section-link" href="/about">About</a></li>
+        <li class="col-xs pages-navbar" id="events"><a class="section-link" href="/events">Events</a></li>
+        <li class="col-xs pages-navbar" id="artists"><a class="section-link" href="/artists">Artists</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2 home-holder">
+      <a class="logo-link" href="<%= root_path %>"><%= image_tag('logo-small.png', class: 'small-home', size: '82x59') %></a>
+    </div>
+    <div class="col-md-5">
+      <ul class="row" id="navbar-row">
+        <li class="col-xs pages-navbar" id="releases"><a class="section-link" href="/releases">Releases</a></li>
+        <li class="col-xs pages-navbar" id="studio"><a class="section-link" href="/studio">Studio</a></li>
+        <li class="col-xs pages-navbar" id="contact"><a class="section-link" href="/contact">Contact</a></li>
         <% if user_signed_in? %>
-          <li class="col-xs pages" id="logout"><%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'section-link' %></li>
+            <li class="col-xs pages" id="logout"><%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'section-link' %></li>
         <% end %>
       </ul>
     </div>

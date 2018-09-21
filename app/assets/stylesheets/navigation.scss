@@ -2,28 +2,77 @@ ul > li {
   display: inline;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: initial;
-  text-align: right;
-  background-color: #ddd;
+.home-holder {
+  text-align: center;
 }
 
-.navbar-nav {
-  margin-right: 0;
-}
-
-.navbar-brand {
-  positon: fixed;
-}
-
-.navbar-brand:hover {
+.logo-link:hover {
   background-color: transparent;
 }
 
 .small-home:hover {
   filter: opacity(.5);
 }
+
+.navbar {
+  padding: 0.5rem 0 !important;
+}
+
+.navbar-nav {
+  margin: auto;
+}
+
+.row#navbar-row {
+  margin: 0;
+  width: inherit;
+}
+
+.pages-navbar {
+  line-height: 64px;
+  text-align: center;
+  width: 64px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.pages-navbar:hover {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: -64px 0;
+}
+
+.pages-navbar#about {
+  background-image: url('navbar/music.png');
+}
+.pages-navbar#events {
+  background-image: url('navbar/events.png');
+}
+.pages-navbar#artists {
+  background-image: url('navbar/artists.png');
+}
+.pages-navbar#releases {
+  background-image: url('navbar/releases.png');
+}
+.pages-navbar#studio {
+  background-image: url('navbar/studio.png');
+}
+.pages-navbar#contact {
+  background-image: url('navbar/contact.png');
+}
+
+.pages-navbar:hover .section-link {
+  text-shadow:
+          -1px -1px 0 #000,
+          1px -1px 0 #000,
+          -1px 1px 0 #000,
+          1px 1px 0 #000;
+}
+
+@media (max-width: 500px) {
+  .pages-navbar#about, .pages-navbar#events, .pages-navbar#artists, .pages-navbar#releases, .pages-navbar#studio, .pages-navbar#contact {
+    background-image: url('navbar/blank.png');
+  }
+}
+
 

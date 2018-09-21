@@ -39,6 +39,7 @@ ul {
 
 .pages {
   line-height: 64px;
+  text-align: center;
   width: 64px;
   margin: auto;
   background-repeat: no-repeat;
@@ -98,14 +99,6 @@ ul {
   text-decoration: none;
 }
 
-col-xs-pages#events:hover .section-link{
-  text-shadow:
-          -1px -1px 0 #000,
-          1px -1px 0 #000,
-          -1px 1px 0 #000,
-          1px 1px 0 #000;
-}
-
 /** headers **/
 
 .header-link, .header-link:visited {
@@ -140,16 +133,14 @@ col-xs-pages#events:hover .section-link{
   margin: 0;
   height: 100vh;
   width: 100vw;
-  padding-top: 85px;
+  padding-top: 96px;
+  overflow: auto;
   text-align: center;
 }
 
 .static-page-body {
   display: inline-block;
-  width: 66%;
-  height: 100%;
   overflow: auto;
-  max-width: 600px;
   margin: auto;
   vertical-align: middle;
 }
@@ -163,8 +154,7 @@ col-xs-pages#events:hover .section-link{
 }
 
 hr {
-  width: 66vw;
-  max-width: 600px;
+  width: inherit;
   margin: 0 auto 16px auto;
 }
 
@@ -211,10 +201,15 @@ hr {
 @media (max-width: 500px) {
   .pages {
     min-width: 150px;
-    background-image: url('navbar/blank.png');
   }
 
   .pages#about, .pages#events, .pages#artists, .pages#releases, .pages#studio, .pages#contact {
     background-image: url('navbar/blank.png');
+  }
+}
+
+@media (max-width: 768px) {
+  .static-page {
+    padding-top: 219px;
   }
 }
