@@ -5,14 +5,12 @@ class ReleasesController < ApplicationController
   # GET /releases
   # GET /releases.json
   def index
-    @releases.artist = Artist.find(params[:release][:artist_id]).name
     @releases = Release.all.sort_by(&:release).reverse
   end
 
   # GET /releases/1
   # GET /releases/1.json
   def show
-    @releases.artist = Artist.find(params[:release][:artist_id]).name
   end
 
   # GET /releases/new
