@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8af8e4f8-5140-448a-8921-c1868efd83a1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/navigation.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/studio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/studio.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/about/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/about/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/contact/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contact/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_navigation.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_navigation.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/studio/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/studio/index.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/studio.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -497,12 +486,12 @@
       <workItem from="1535570848681" duration="19274000" />
       <workItem from="1536701995941" duration="4970000" />
       <workItem from="1536774664371" duration="4815000" />
-      <workItem from="1537479893671" duration="16737000" />
+      <workItem from="1537479893671" duration="16793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130210000" />
+    <option name="totallyTimeSpent" value="130266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="984" extended-state="6" />
@@ -881,7 +870,7 @@
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/studio.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
         </state>
       </provider>
     </entry>
