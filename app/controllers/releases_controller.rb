@@ -5,12 +5,14 @@ class ReleasesController < ApplicationController
   # GET /releases
   # GET /releases.json
   def index
+    @releases.artist = Artist.find(params[:release][:artist_id]).name
     @releases = Release.all.sort_by(&:release).reverse
   end
 
   # GET /releases/1
   # GET /releases/1.json
   def show
+    @releases.artist = Artist.find(params[:release][:artist_id]).name
   end
 
   # GET /releases/new
@@ -70,7 +72,7 @@ class ReleasesController < ApplicationController
   end
 
   def release_params
-    params[:release][:artist] = Artist.find(params[:release][:artist_id])
+    params[:release][:artist] = Artist.find(params[:release][:artist_id]).name
     params.require(:release).permit(:artist_id, :title, :release, :description, :album_art, artist_attributes: [:name, :description, :photo, :featured])
   end
 end
