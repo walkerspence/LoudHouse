@@ -8,8 +8,6 @@ class Release < ApplicationRecord
                     :s3_region => ENV['AWS_REGION'],
                     :bucket => ENV['S3_BUCKET_NAME']
   #TODO set default "missing" image to loudhouse logo
-
   belongs_to :artist, optional: true
-
   validates_attachment :album_art, content_type: { content_type: ["image/jpg", "image/jpeg", "image/png", "image/gif"] }
 end

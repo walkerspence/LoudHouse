@@ -21,7 +21,7 @@
     <% end %>
     <% unless controller_name == "home" ||
         ((controller_name == "artists" || controller_name == "events" || controller_name == "releases") &&
-            action_name == "new" || action_name == "edit") %>
+            action_name == "new" || action_name == "edit") || devise_controller?  %>
       <%= render 'layouts/navigation' %>
     <% end %>
     <%= yield %>
