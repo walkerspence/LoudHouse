@@ -86,7 +86,7 @@ Rails.application.configure do
       port:                 587,
       domain:               'gmail.com',
       user_name:            'loudhousepublishing@gmail.com',
-      password:             ENV["EMAIL_PASSWORD"],
+      password:             ENV["EMAIL_PASS"],
       authentication:       'plain',
       enable_starttls_auto: true
   }
