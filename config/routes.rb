@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :about, only: [:index]
   resources :contact, only: [:index]
 
-
+  post 'contact', to: 'contact#new'
 
   root to: "home#index"
 end

@@ -23,6 +23,12 @@
 @import 'studio';
 @import 'bootstrap';
 
+.alert {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
 /** nav bar backgrounds/styling **/
 
 ul {
