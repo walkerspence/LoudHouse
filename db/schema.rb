@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_21_042310) do
+ActiveRecord::Schema.define(version: 2018_10_13_091948) do
 
   create_table "artists", force: :cascade do |t|
     t.text "description"
@@ -41,6 +41,14 @@ ActiveRecord::Schema.define(version: 2018_08_21_042310) do
     t.string "photo_content_type"
     t.integer "photo_file_size"
     t.datetime "photo_updated_at"
+  end
+
+  create_table "images", force: :cascade do |t|
+    t.string "photo_file_name"
+    t.string "photo_content_type"
+    t.bigint "photo_file_size"
+    t.datetime "photo_updated_at"
+    t.string "title", default: ""
   end
 
   create_table "releases", force: :cascade do |t|

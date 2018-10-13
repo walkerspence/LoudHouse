@@ -19,7 +19,7 @@ class ApplicationMailer < ActionMailer::Base
     @email = info[:email]
     mail(
         to: @email,
-        subject: "We have received your message",
+        subject: "We have received your message.",
         message: @message
     )
   end

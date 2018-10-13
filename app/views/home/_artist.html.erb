@@ -6,7 +6,9 @@
         <p class="card-text" id="artist"><%= artist.description %></p>
       </div>
       <div class="col-md-5">
-        <%= image_tag artist.photo.url(:medium), class: "featured-card-image" %>
+        <a class="featured-card-image" id="artist" href="/artists/<%= artist.id %>">
+          <%= image_tag artist.photo.url(:home), class: "featured-card-image" %>
+        </a>
       </div>
     </div>
   </div>

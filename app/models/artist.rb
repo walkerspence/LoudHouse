@@ -1,6 +1,6 @@
 class Artist < ApplicationRecord
   has_attached_file :photo,
-                    :styles => { :home => "500x500" },
+                    :styles => { :home => "300x300", :thumb => "100x100" },
                     :s3_protocol => 'https',
                     :s3_host_name => ENV['S3_HOST_NAME'],
                     :path => ENV['S3_PATH_ARTISTS'],

@@ -15,6 +15,6 @@
 //= require jquery_ujs
 //= require activestorage
 //= require turbolinks
-//= require home
 //= require application
+//= require lightbox
 //= require_tree .

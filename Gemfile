@@ -82,3 +82,6 @@ gem 'jquery-rails'
 gem 'figaro'
 
 gem 'aws-sdk-s3'
+
+gem 'photoswipe-rails'
+

@@ -1,5 +1,7 @@
 {
   "name": "LoudHouse",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "lightbox2": "^2.10.0"
+  }
 }

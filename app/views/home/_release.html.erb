@@ -1,7 +1,9 @@
 <div class="card featured-card" id="release">
   <div class="card-body" id="release">
     <div class="col-md">
-      <%= image_tag release.album_art.url(:medium), class: "featured-card-image", id: "album_art" %>
+      <a class="featured-card-image" id="album_art" href="/releases/<%= release.id %>">
+        <%= image_tag release.album_art.url(:home), class: "featured-card-image", id: "album_art" %>
+      </a>
     </div>
     <div class="col-md">
       <a class="card-title" id="release" href="/releases/<%= release.id %>">

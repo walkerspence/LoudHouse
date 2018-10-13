@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :images, only: [:create, :destroy]
   devise_for :users, :controllers => { :registrations => 'registrations' }
   resources :releases
   resources :artists
